@@ -1,0 +1,8 @@
+project: savantenvs/pegtl
+target: fuzz_lua53
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_lua53/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_lua53
+    libfuzzer: true
